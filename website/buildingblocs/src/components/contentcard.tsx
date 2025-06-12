@@ -30,7 +30,7 @@ export default function ContentCard({
                 border border-neutral-400/20 
                 rounded-2xl shadow-lg hover:shadow-xl
                 transition-all duration-300 cursor-pointer
-                group min-w-90 h-140 p-6
+                group w-90 h-140 p-6
             "
         >
             {icon && (

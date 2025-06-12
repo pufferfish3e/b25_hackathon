@@ -45,7 +45,7 @@ export default function Navbar() {
                     className="hover:text-neutral-800 transition-colors duration-200"
                 >
                     <Link
-                        href="/contact"
+                        href="/map"
                         className="px-3 py-2 rounded-md hover:bg-white/20 transition-all"
                     >
                         Map

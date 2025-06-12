@@ -9,7 +9,10 @@ import Image from "next/image";
 export default function Home() {
     return (
         <main>
-            <section id="home" className="relative w-screen h-screen overflow-x-hidden">
+            <section
+                id="home"
+                className="relative w-screen h-screen overflow-x-hidden"
+            >
                 <Image
                     src="/images/background.png"
                     alt="Background"
@@ -26,7 +29,7 @@ export default function Home() {
                         text-center w-full px-4
                         drop-shadow-2xl shadow-white/50
                         leading-tight tracking-tight
-                        pt-30"
+                        pt-20"
                     >
                         Meet Percepta.
                     </motion.h1>
@@ -34,7 +37,7 @@ export default function Home() {
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="w-screen max-w-4xl px-4 flex justify-center items-center"
+                        className="w-screen max-w-4xl px-4 flex justify-center items-center pb-20"
                     >
                         <EnhancedSTLViewer stlPath="/models/visual_aid_connector_v3.stl" />
                     </motion.div>
@@ -48,13 +51,16 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section id="about" className="relative w-screen h-screen overflow-hidden">
+            <section
+                id="about"
+                className="relative w-screen h-screen overflow-hidden"
+            >
                 <motion.div className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-gray-50">
                     <ImageMarquee />
                     <motion.h1 className="font-bold text-black font-sf-pro z-10 text-6xl tracking-tighter">
                         What is Percepta?
                     </motion.h1>
-                    <motion.p className="text-gray-900 text-lg font-sf-pro z-10 text-center max-w-200">
+                    <motion.p className="text-gray-900 text-lg font-sf-pro z-10 text-center max-w-200 ">
                         Percepta is a smart, attachable camera that clips onto
                         your glasses. Inside, it runs a lightweight machine
                         learning model that continuously analyzes your
@@ -68,12 +74,12 @@ export default function Home() {
                     <ImageMarquee />
                 </motion.div>
             </section>
-            <section className="relative w-screen h-screen overflow-x-hidden">
-                <motion.div className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-gray-50">
+            <section className="relative w-screen h-fill overflow-hidden">
+                <motion.div className="flex flex-col items-center justify-center max-w-screen min-h-screen relative gap-8 bg-gradient-to-b from-gray-50 to-[#e8e8e9]">
                     <motion.h1 className="font-bold text-black font-sf-pro z-10 text-6xl tracking-tighter">
-                        How does it work?
+                        Why Percepta?
                     </motion.h1>
-                    <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-8 w-full max-w-4xl px-4 pt-10">
+                    <motion.div className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full px-4 pt-10">
                         <ContentCard
                             title={
                                 "Hazard Detection – See the Unseen Before It Happens"
@@ -115,6 +121,36 @@ export default function Home() {
                     </motion.div>
                 </motion.div>
             </section>
+            <section className="relative w-screen h-screen overflow-x-hidden ">
+                <motion.div className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-[#e8e8e9]">
+                    <motion.h1 className="font-bold text-black font-sf-pro z-10 text-6xl tracking-tighter overflow-hidden text-center">
+                        Who can benefit from Percepta?
+                    </motion.h1>
+                    <motion.p className="text-gray-900 text-lg font-sf-pro z-10 text-center max-w-200">
+                        Percepta is designed for anyone who wants to enhance
+                        their awareness and safety in their environment. Whether
+                        you&apos;re navigating busy streets, exploring new
+                        places, or simply going about your daily routine,
+                        Percepta provides the support you need to stay informed
+                        and proactive.
+                    </motion.p>
+                    <Image
+                        src="/images/demo.png"
+                        alt="Percepta Demo"
+                        width={400}
+                        height={600}
+                    />
+                </motion.div>
+            </section>
+            <footer className="bg-[#e8e8e9] text-center py-8 flex flex-col items-center justify-center gap-4 pb-6">
+                <motion.p className="font-hack text-gray-600 text-lg font-sf-pro mb-4">
+                    Made with ❤️ by Kendrick, Wei Chong, Tony and Mahek
+                </motion.p>
+                <motion.p className="font-hack text-gray-600 text-lg font-sf-pro">
+                    &copy; {new Date().getFullYear()} Percepta. All rights
+                    reserved.
+                </motion.p>
+            </footer>
         </main>
     );
 }

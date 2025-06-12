@@ -10,8 +10,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Building Blocs",
-    description: "3D STL Viewer and Design Platform",
+    title: "Percepta",
+    description: "A camera for the visually impaired",
+    icons:{
+        icon: "icons/favicon.ico",
+    }
 };
 
 export default function RootLayout({
