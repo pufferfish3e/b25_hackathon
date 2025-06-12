@@ -69,9 +69,9 @@ function LoadingFallback() {
 
 export default function EnhancedSTLViewer({ stlPath }: { stlPath: string }) {
     return (
-        <div className="w-full">
+        <div className="w-full h-full flex items-center justify-center p-4"> 
             {/* 3D Viewer with viewport */}
-            <div className="w-128 h-128 bg-gray-100 rounded-lg">
+            <div className="w-128 h-128 bg-transparent rounded-lg">
                 <Canvas
                     camera={{
                         position: [3, 3, 3],
@@ -104,7 +104,7 @@ export default function EnhancedSTLViewer({ stlPath }: { stlPath: string }) {
                     <Suspense fallback={<LoadingFallback />}>
                         <STLModel
                             url={stlPath}
-                            color={"blue"}
+                            color={"black"}
                             wireframe={false}
                         />
                     </Suspense>

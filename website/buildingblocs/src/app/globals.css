@@ -1,24 +1,99 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("https://fonts.cdnfonts.com/s/84417/SFPRODISPLAYREGULAR.woff")
+        format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("https://fonts.cdnfonts.com/s/84417/SFPRODISPLAYMEDIUM.woff")
+        format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("https://fonts.cdnfonts.com/s/84417/SFPRODISPLAYBOLD.woff")
+        format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hack";
+    src: url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.woff")
+            format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hack";
+    src: url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-bold.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-bold.woff")
+            format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base {
+    :root {
+        --font-sf-pro: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+            sans-serif;
+        --font-hack: "Hack", "Monaco", "Consolas", monospace;
+        --font-inter: "Inter", system-ui, sans-serif;
+    }
+}
+
+/* Extend Tailwind's font utilities */
+@layer utilities {
+    .font-sf-pro {
+        font-family: var(--font-sf-pro);
+    }
+
+    .font-hack {
+        font-family: var(--font-hack);
+    }
+
+    .font-mono {
+        font-family: var(--font-hack);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  margin: 0;
-  padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sf-pro);
+}
+
+/* Code elements use Hack font by default */
+code,
+pre {
+    font-family: var(--font-hack);
 }

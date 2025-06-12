@@ -21,7 +21,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} antialiased font-sans`}> 
+            <head>
+                <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css"
+                />
+            </head>
+            <body className={`${inter.variable} antialiased font-sans`}>
                 <Navbar />
                 {children}
             </body>
