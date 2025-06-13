@@ -2,7 +2,9 @@
 
 import Marquee from "@/components/marquee";
 import Image from "next/image";
+
 //stefankudla.com/posts/how-to-create-a-marquee-with-framer-motion-and-react#step-3-create-the-imagemarquee-component
+
 const ImageMarquee = () => {
     const images = [
         {
@@ -42,7 +44,7 @@ const ImageMarquee = () => {
             height: 300,
         },
     ];
-
+    // Dynamic Implementation of the ImageMarquee component (better instead of static like the one in the example, can change images easily)
     return (
         <div className="w-full py-16 bg-gray-50">
             <Marquee speed={20} gapBetween={32}>

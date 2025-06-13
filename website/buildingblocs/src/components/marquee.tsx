@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
 // stefankudla.com/posts/how-to-create-a-marquee-with-framer-motion-and-react
+// Did not use useWindowSize hook as it was not necessary for this implementation
+
 
 const Marquee = ({
     children,
@@ -37,7 +39,7 @@ const Marquee = ({
     }, [isClient, children]);
 
     if (!isClient) {
-        return null; // Prevent hydration mismatch
+        return null; 
     }
 
     const duplicateChildren = new Array(3).fill(children);
@@ -48,7 +50,7 @@ const Marquee = ({
         <div className="overflow-hidden w-full">
             <motion.div
                 ref={marqueeRef}
-                animate={{
+                whileInView={{
                     x: animationDirection,
                 }}
                 transition={{
