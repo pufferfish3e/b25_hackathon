@@ -114,9 +114,6 @@ export default function Home() {
                         Why Percepta?
                     </motion.h1>
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
                         className="grid grid-cols-1 md:grid-cols-2 md:justify-items-center xl:grid-cols-4 gap-8 px-8 w-full md:gap-16 py-10"
                     >
                         <ContentCard
