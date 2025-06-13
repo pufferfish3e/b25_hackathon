@@ -36,3 +36,5 @@ In the interpreter selection menu, choose **+ Create Virtual Environment...**
 ## 6. Run Notebook
 - Click "Run All" in the model.ipynb file.
 
+The README file for the website can found [here]("website/buildingblocs/README.md").
+
