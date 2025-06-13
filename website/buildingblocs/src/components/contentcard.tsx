@@ -15,7 +15,7 @@ export default function ContentCard({
 }) {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay }}
             whileHover={{
@@ -39,7 +39,7 @@ export default function ContentCard({
                 </div>
             )}
             <motion.h2
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay }}
                 className="text-2xl font-semibold text-center text-neutral-800 group-hover:text-neutral-900"

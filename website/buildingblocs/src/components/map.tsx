@@ -171,7 +171,7 @@ const OpenStreetMap = () => {
             >
                 <div className="container mx-auto px-4">
                     <motion.div
-                        initial={{ y: -20, opacity: 0 }}
+                        initial={{ y: 30, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.6 }}
                         className="text-center mb-8 pt-18"
@@ -194,7 +194,7 @@ const OpenStreetMap = () => {
                         </motion.p>
                     </motion.div>
                     <motion.div
-                        initial={{ y: 20, opacity: 0 }}
+                        initial={{ y: 30, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="bg-white rounded-lg shadow-lg overflow-hidden"
@@ -255,7 +255,7 @@ const OpenStreetMap = () => {
         >
             <div className="container mx-auto px-4">
                 <motion.div
-                    initial={{ y: -30, opacity: 0 }}
+                    initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.2 }}
                     className="text-center mb-8 pt-18"
@@ -284,7 +284,7 @@ const OpenStreetMap = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ y: 40, opacity: 0, scale: 0.95 }}
+                    initial={{ y: 30, opacity: 0, scale: 0.95 }}
                     animate={{ y: 0, opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.8,
@@ -354,7 +354,7 @@ const OpenStreetMap = () => {
                                                     <Popup>
                                                         <motion.div
                                                             initial={{
-                                                                y: 10,
+                                                                y: 30,
                                                                 opacity: 0,
                                                             }}
                                                             animate={{
@@ -396,7 +396,7 @@ const OpenStreetMap = () => {
                                             <Popup>
                                                 <motion.div
                                                     initial={{
-                                                        y: 10,
+                                                        y: 30,
                                                         opacity: 0,
                                                     }}
                                                     animate={{
@@ -437,13 +437,13 @@ const OpenStreetMap = () => {
                     </motion.div>
                     {/* Map Legend with animation */}
                     <motion.div
-                        initial={{ y: 20, opacity: 0 }}
+                        initial={{ y: 30, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 1.8, duration: 0.6 }}
                         className="p-4 bg-gradient-to-r from-gray-50 to-blue-50 border-t"
                     >
                         <motion.h3
-                            initial={{ x: -20, opacity: 0 }}
+                            initial={{ x: 30, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ delay: 2 }}
                             className="font-semibold mb-3 font-sf-pro flex items-center gap-2"
@@ -452,7 +452,7 @@ const OpenStreetMap = () => {
                         </motion.h3>
                         <div className="flex flex-wrap gap-6 text-sm">
                             <motion.div
-                                initial={{ x: -20, opacity: 0 }}
+                                initial={{ x: 30, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 2.1 }}
                                 className="flex items-center gap-2"
@@ -474,7 +474,7 @@ const OpenStreetMap = () => {
                                 <span>📍 Your Location</span>
                             </motion.div>
                             <motion.div
-                                initial={{ x: -20, opacity: 0 }}
+                                initial={{ x: 30, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 2.2 }}
                                 className="flex items-center gap-2"
@@ -504,9 +504,9 @@ const OpenStreetMap = () => {
                 <AnimatePresence>
                     {userLocation.error && (
                         <motion.div
-                            initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                            initial={{ opacity: 0, y: 30, scale: 0.9 }}
                             animate={{ opacity: 1, y: 0, scale: 1 }}
-                            exit={{ opacity: 0, y: -20, scale: 0.9 }}
+                            exit={{ opacity: 0, y: -30, scale: 0.9 }}
                             transition={{
                                 type: "spring",
                                 stiffness: 300,
@@ -515,7 +515,7 @@ const OpenStreetMap = () => {
                             className="mt-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg shadow-md"
                         >
                             <motion.div
-                                initial={{ x: -10 }}
+                                initial={{ x: 30 }}
                                 animate={{ x: 0 }}
                                 className="flex items-center gap-2"
                             >
