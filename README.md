@@ -4,7 +4,7 @@ This github repository consists of the machine learning model (Percepta) for gro
 
 ## What Is Percepta?
 
-Percepta is a smart, attachable camera that clips onto your glasses. Inside, it runs a lightweight machine learning model that continuously analyzes your surroundings in real time, seamlessly connecting to a companion app that collects data on nearby hazards. Packed with powerful features like hazard detection and audio feedback, Percepta is designed in mind to enhance your awareness and transform the way you interact with the world.
+Percepta is a smart, attachable camera that clips onto your glasses. Inside, it runs a lightweight machine learning model that continuously analyzes your surroundings in real time, seamlessly connecting to a companion app that collects data on nearby hazards. Packed with powerful features like hazard detection and audio feedback, Percepta is designed in mind to aid the visually impaired and add to the way they interact with the world.
 
 ## Setup and Installation
 
