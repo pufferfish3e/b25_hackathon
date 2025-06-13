@@ -16,7 +16,7 @@ export default function ContentCard({
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay }}
             whileHover={{
                 scale: 1.02,
@@ -30,15 +30,20 @@ export default function ContentCard({
                 border border-neutral-400/20 
                 rounded-2xl shadow-lg hover:shadow-xl
                 transition-all duration-300 cursor-pointer
-                group w-90 h-140 p-6
+                group w-90 min-h-140 lg:h-170 p-6
             "
         >
             {icon && (
                 <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-200">
                     {icon}
-                    </div>
+                </div>
             )}
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{duration: 0.5, delay }} className="text-2xl font-semibold text-center text-neutral-800 group-hover:text-neutral-900">
+            <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay }}
+                className="text-2xl font-semibold text-center text-neutral-800 group-hover:text-neutral-900"
+            >
                 {title}
             </motion.h2>
             <motion.p className="text-neutral-700 text-center text-md leading-relaxed">

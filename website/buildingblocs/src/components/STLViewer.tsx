@@ -69,7 +69,7 @@ function LoadingFallback() {
 
 export default function EnhancedSTLViewer({ stlPath }: { stlPath: string }) {
     return (
-        <div className="w-full h-full flex items-center justify-center p-4"> 
+        <div className="w-full h-full flex items-center justify-center p-4">
             {/* 3D Viewer with viewport */}
             <div className="w-128 h-128 bg-transparent rounded-lg">
                 <Canvas
@@ -104,7 +104,7 @@ export default function EnhancedSTLViewer({ stlPath }: { stlPath: string }) {
                     <Suspense fallback={<LoadingFallback />}>
                         <STLModel
                             url={stlPath}
-                            color={"black"}
+                            color={new THREE.Color(0x696969).getStyle()} // Default color
                             wireframe={false}
                         />
                     </Suspense>
