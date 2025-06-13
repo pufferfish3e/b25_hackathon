@@ -29,7 +29,9 @@ export const metadata: Metadata = {
     viewport: "width=device-width, initial-scale=1",
     robots: "index, follow",
     icons: {
-        icon: "icons/favicon.ico",
+        icon: "icons/percepta.ico",
+        apple: "icons/apple-touch-icon.png",
+        shortcut: "icons/favicon-32x32.png",
     },
     openGraph: {
         title: "Percepta - AI Visual Aid System",

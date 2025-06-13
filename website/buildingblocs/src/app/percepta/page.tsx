@@ -75,7 +75,7 @@ export default function DemoPage() {
             <div className="absolute inset-0 bg-gray-50/80 backdrop-blur-sm"></div>
             <div className="relative z-10 w-screen text-center p-8 flex flex-col items-center justify-center min-h-screen gap-8">
                 <motion.h1
-                    initial={{ opacity: 0, y: -20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className="text-6xl font-bold text-gray-800 pt-20"
@@ -83,7 +83,7 @@ export default function DemoPage() {
                     Percepta Demo
                 </motion.h1>
                 <motion.p
-                    initial={{ opacity: 0, y: -20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className="text-xl text-gray-600"
@@ -92,7 +92,7 @@ export default function DemoPage() {
                     files and run the demo to see how it works.
                 </motion.p>
                 <motion.div
-                    initial={{ opacity: 0, y: -20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="w-screen flex justify-center items-center"
@@ -102,7 +102,7 @@ export default function DemoPage() {
                 <div className="w-screen flex flex-col items-center justify-center gap-8">
                     <div className="flex gap-4 w-full max-w-md">
                         <motion.button
-                            initial={{ opacity: 0, y: -20 }}
+                            initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.4 }}
                             onClick={() => {
@@ -116,7 +116,7 @@ export default function DemoPage() {
                         </motion.button>
 
                         <motion.button
-                            initial={{ opacity: 0, y: -20 }}
+                            initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
                             onClick={playTextToSpeech}
@@ -133,7 +133,7 @@ export default function DemoPage() {
                         </motion.button>
                     </div>
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.6 }}
                         id="result"
@@ -142,7 +142,7 @@ export default function DemoPage() {
                         <div className="flex items-start gap-3 p-4 bg-white rounded-lg shadow-sm border border-gray-200 w-full">
                             <div className="relative w-18 h-18 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center">
                                 <Image
-                                    src="/icons/favicon.ico"
+                                    src="/icons/android-chrome-512x512.png"
                                     alt="Icon"
                                     fill
                                     className="absolute max-w-18 max-h-18 object-cover rounded-full"

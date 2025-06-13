@@ -23,7 +23,7 @@ export default function Home() {
                 />
                 <div className="flex flex-col items-center justify-center w-screen min-h-screen relative bg-transparent">
                     <motion.h1
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         className="font-bold text-black font-sf-pro z-10 absolute top-8 
@@ -50,34 +50,34 @@ export default function Home() {
             </section>
             <section
                 id="about"
-                className="relative w-screen h-screen overflow-hidden"
+                className="relative w-screen min-h-screen h-fit overflow-hidden"
             >
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
-                    className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-gray-50"
+                    className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-gray-50 h-fit"
                 >
                     <motion.div
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
                         <ImageMarquee />
                     </motion.div>
                     <motion.h1
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="font-bold text-black font-sf-pro z-10 text-6xl tracking-tighter"
+                        className="font-bold text-black font-sf-pro z-10 tracking-tight text-nowrap text-center lg:text-8xl md:text-7xl sm:text-6xl text-5xl px-4"
                     >
                         What is Percepta?
                     </motion.h1>
                     <motion.p
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.5 }}
-                        className="text-gray-900 text-lg font-sf-pro z-10 text-center max-w-200 "
+                        className="text-gray-900 text-lg lg:text-xl font-sf-pro z-10 text-center max-w-200 px-4"
                     >
                         Percepta is a smart, attachable camera that clips onto
                         your glasses. Inside, it runs a lightweight machine
@@ -90,7 +90,7 @@ export default function Home() {
                         the world.
                     </motion.p>
                     <motion.div
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.7 }}
                     >
@@ -103,21 +103,21 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
-                    className="flex flex-col items-center justify-center max-w-screen min-h-screen relative gap-8 bg-gradient-to-b from-gray-50 to-[#e8e8e9]"
+                    className="flex flex-col items-center justify-center max-w-screen min-h-screen relative gap-8 bg-gradient-to-b from-gray-50 to-[#edeced]"
                 >
                     <motion.h1
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="font-bold text-black font-sf-pro z-10 text-6xl tracking-tighter"
+                        className="font-bold text-black font-sf-pro z-10 tracking-tight text-nowrap text-center lg:text-8xl md:text-7xl sm:text-6xl text-5xl px-4"
                     >
                         Why Percepta?
                     </motion.h1>
                     <motion.div
-                        initial={{ opacity: 0, y: -50 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full px-4 pt-10"
+                        className="grid grid-cols-1 md:grid-cols-2 md:justify-items-center xl:grid-cols-4 gap-8 px-8 w-full md:gap-16 py-10"
                     >
                         <ContentCard
                             title={
@@ -142,7 +142,7 @@ export default function Home() {
                         <ContentCard
                             title={"Location Alerts – Know Where the Risks Are"}
                             description={
-                                "Empowered navigation starts with knowledge. Every detected hazard is mapped and tagged via GPS, so you—and others—can get alerts before reaching problem areas. Imagine a map that evolves with your city, warning users in advance and helping people plan safer routes in real time, Because that’s exactly what we are making."
+                                "Empowered navigation starts with knowledge. Every detected hazard is mapped and tagged via GPS, so you—and others—can get alerts before reaching problem areas. Imagine a map that evolves with your city, warning users in advance and helping people plan safer routes in real time, Because that's exactly what we are making."
                             }
                             icon={"🌍"}
                             delay={1.0}
@@ -152,7 +152,7 @@ export default function Home() {
                                 "Community Safety – Smarter Together, Safer Together"
                             }
                             description={
-                                "One person’s alert helps everyone. Each detection is anonymously shared with a growing community of users and local authorities, straight back to a shared map on the app, creating a live hazard awareness network. From daily commutes to emergency response, this system transforms personal safety into collective intelligence."
+                                "One person's alert helps everyone. Each detection is anonymously shared with a growing community of users and local authorities, straight back to a shared map on the app, creating a live hazard awareness network. From daily commutes to emergency response, this system transforms personal safety into collective intelligence."
                             }
                             icon={"👥"}
                             delay={1.2}
@@ -160,26 +160,26 @@ export default function Home() {
                     </motion.div>
                 </motion.div>
             </section>
-            <section className="relative w-screen h-screen overflow-x-hidden ">
+            <section className="relative w-screen min-h-screen h-fit overflow-hidden">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
-                    className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-[#e8e8e9]"
+                    className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-[#edeced]"
                 >
                     <motion.h1
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="font-bold text-black font-sf-pro z-10 text-6xl tracking-tighter overflow-hidden text-center"
+                        className="font-bold text-black font-sf-pro z-10 text-6xl tracking-tight overflow-hidden text-center sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl px-4 pt-10"
                     >
                         Who can benefit from Percepta?
                     </motion.h1>
                     <motion.p
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-gray-900 text-lg font-sf-pro z-10 text-center max-w-200"
+                        className="text-gray-900 text-lg font-sf-pro z-10 text-center max-w-200 sm:text-xl lg:text-2xl px-4"
                     >
                         Percepta is designed to empower blind and visually
                         impaired individuals with greater awareness and safety
@@ -207,13 +207,13 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
-                    className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-gradient-to-b from-[#e8e8e9] to-black"
+                    className="flex flex-col items-center justify-center w-screen min-h-screen relative gap-8 bg-gradient-to-b from-[#edeced] to-black"
                 >
                     <motion.div className="w-screen max-w-4xl px-4 flex justify-center items-center pb-20">
                         <EnhancedSTLViewer stlPath="/models/visual_aid_connector_v3.stl" />
                     </motion.div>
                     <motion.button
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         whileHover={{ scale: 1.05 }}
@@ -229,7 +229,7 @@ export default function Home() {
                     </motion.button>
                 </motion.div>
             </section>
-            <Footer backgroundColor="black" textColor="gray-50"/>
+            <Footer backgroundColor="black" textColor="white" />
         </main>
     );
 }

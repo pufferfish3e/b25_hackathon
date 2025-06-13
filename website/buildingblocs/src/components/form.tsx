@@ -25,15 +25,15 @@ function handleSubmit(e: React.FormEvent) {
 export default function Form({}: FormProps) {
     return (
         <motion.form
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className={`w-full max-w-md bg-neutral-300/20 hover:bg-neutral-300/30 text-neutral-600 backdrop-blur-[1px] border border-neutral-400/20 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-sf-pro font-medium text-lg flex flex-col gap-8 p-10`}
+            className={`sm:w-full md:max-w-2xl bg-neutral-300/20 hover:bg-neutral-300/30 text-neutral-600 backdrop-blur-[1px] border border-neutral-400/20 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-sf-pro font-medium text-lg flex flex-col gap-8 p-10`}
             onSubmit={handleSubmit}
         >
             <FileUpload onFileSelect={(file) => console.log(file.name)} />
             <motion.button
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 id="submit-button"

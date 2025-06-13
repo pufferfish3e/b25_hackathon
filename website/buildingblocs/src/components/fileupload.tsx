@@ -190,7 +190,7 @@ export default function FileUpload({ onFileSelect }: FileUploadProps) {
             <AnimatePresence>
                 {error && (
                     <motion.div
-                        initial={{ opacity: 0, y: -10 }}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         className="mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg text-sm font-sf-pro flex items-center gap-2"
