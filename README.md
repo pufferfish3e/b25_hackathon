@@ -1,4 +1,4 @@
-# b25_hackathon
+# BuildingBlocs June 2025 Hackathon Winner (Beginner First Place)
 
 This github repository consists of the machine learning model (Percepta) for group b25.
 
